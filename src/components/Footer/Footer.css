@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: var(--background);
+  padding: 2rem;
+}
+
+footer > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+footer > article > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+footer > article > ul > li > a {
+  color: var(--primary-text);
+}
+footer > article > ul > li > a:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* Móvil */
+@media (max-width: 599px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

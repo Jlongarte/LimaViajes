@@ -1,0 +1,57 @@
+.btn,
+.category,
+#SearchBtn {
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.btn:hover,
+.category:hover,
+#SearchBtn:hover {
+  background: var(--secondary-text);
+  color: white;
+}
+
+.btn > a {
+  color: var(--primary-text);
+}
+.btn > a:hover {
+  color: var(--secondary-text);
+}
+
+/* Variantes */
+.primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.secondary {
+  background-color: var(--primary-text);
+}
+
+.danger {
+  background-color: #dc2626;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+/* Hover */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

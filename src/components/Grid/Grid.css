@@ -1,0 +1,76 @@
+.offers {
+  width: 100%;
+  padding: 5rem 0rem 0rem 0rem;
+}
+
+.offers > h2 {
+  padding: 40px;
+}
+.offers > .grid-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  height: 40vh;
+  gap: 10px;
+}
+
+.grid-item:first-child {
+  background-image: url("https://images.pexels.com/photos/12015344/pexels-photo-12015344.jpeg?_gl=1*f65ztw*_ga*MTcxMDk2NjI1OC4xNzcxODYzMzE5*_ga_8JE65Q40S6*czE3NzE4NjMzMTgkbzEkZzEkdDE3NzE4NjMzMzEkajQ3JGwwJGgw");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-item:nth-child(2) {
+  background-image: url("https://theme793-travel-agency.myshopify.com/cdn/shop/files/img_14_300bd84d-2fce-47f2-902e-7ae37378bf36_540x.png?v=1659439237");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item:nth-child(3) {
+  background-image: url("https://theme793-travel-agency.myshopify.com/cdn/shop/files/img_15_23de8804-e614-40a8-8f22-66f2548fd24a_540x.png?v=1659441263");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item:last-child {
+  background-image: url("https://theme793-travel-agency.myshopify.com/cdn/shop/files/img_16_540x.png?v=1659441460");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item:nth-child(2) > a > p,
+.grid-item > p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+
+.grid-item:nth-child(2) > a > span,
+.grid-item > span {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #80c0c3;
+  text-align: center;
+}
+
+.grid-item.large {
+  background-image: url("https://images.pexels.com/photos/1062021/pexels-photo-1062021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}

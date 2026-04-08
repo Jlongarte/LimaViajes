@@ -1,0 +1,59 @@
+.four_trips {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.four_trips ul {
+  display: grid; /* mejor grid que flex si quieres un layout tipo cards */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0; /* elimina padding extra del ul */
+}
+
+.four_trips li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  padding-bottom: 1rem;
+}
+
+.four_trips li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.four_trips li img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+}
+.four_trips li figcaption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.four_trips li p {
+  font-size: 1em;
+  color: #777;
+  margin: 10px 0;
+}
+
+.buy-option {
+  padding-bottom: 25px;
+}
+
