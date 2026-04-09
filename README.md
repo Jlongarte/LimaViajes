@@ -1,16 +1,29 @@
-# React + Vite
+# LimaViajes | Agencia de Viajes
+Bienvenido a Lima Vaijes, una plataforma web moderna diseñada para explorar destinos increíbles con una experiencia de usuario fluida y eficiente. Este proyecto fue construido con un enfoque en modularidad, rendimiento y escalabilidad.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tecnologías Principales
+Framework: React (v18+)
 
-Currently, two official plugins are available:
+Herramienta de Construcción: Vite (Velocidad ultrarrápida)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Iconografía: FontAwesome
 
-## React Compiler
+# Características Principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Catálogo de Viajes Dinámico
+Visualiza una amplia gama de destinos con tarjetas interactivas que muestran detalles clave como precio, duración y puntuación.
 
-## Expanding the ESLint configuration
+Filtro de Búsqueda Avanzado
+Encuentra tu próximo destino en segundos. Permite filtrar por:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Destino: Búsqueda por palabra clave.
+
+Categoría: Playa, montaña, ciudad o aventura.
+
+# Arquitectura Modular
+El código está organizado siguiendo principios de Clean Code. Cada componente es independiente y reutilizable, lo que facilita el mantenimiento y la expansión de la plataforma 
+
+ # Licencia
+Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo y modificarlo a tu gusto.
+
+Hecho con ❤️ por Garayoa 
