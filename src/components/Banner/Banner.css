@@ -1,5 +1,5 @@
 .banner {
-  height: 400px;
+  height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,9 +43,9 @@
 .banner-contact {
   display: flex;
   align-items: center;
-  gap: 10px; /* espacio entre icono y texto */
+  gap: 10px;
   margin-bottom: 20px;
-  justify-content: center; /* quítalo si lo quieres alineado a la izquierda */
+  justify-content: center;
 }
 
 .banner-icon {
@@ -55,4 +55,14 @@
 .banner-phone {
   font-weight: bold;
   font-size: 18px;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .banner-overlay {
+    padding: 2rem;
+  }
 }

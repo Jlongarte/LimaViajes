@@ -119,17 +119,16 @@
   }
 }
 
+/* Móvil */
 @media (max-width: 768px) {
   #gallery-hero {
     height: 400px;
   }
   .white-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: normal;
   }
   .slide-text {
     font-size: 1rem;
-  }
-  .slide-logo {
-    width: 120px;
   }
 }

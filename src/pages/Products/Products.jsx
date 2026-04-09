@@ -68,10 +68,12 @@ const Products = () => {
           products.map((product) => (
             <li key={product.id}>
               <img src={product.image} alt={product.title} />
-              <figcaption>{product.title}</figcaption>
-              <p>{product.price}</p>
-              <div className="buy-option">
-                <Button text="Buy Now" link="/" target="_blank" />
+              <div className="info">
+                <figcaption>{product.title}</figcaption>
+                <p>{product.price}</p>
+                <div className="buy-option">
+                  <Button text="Buy Now" link="/" target="_blank" />
+                </div>
               </div>
             </li>
           ))

@@ -1,16 +1,24 @@
 .four_trips {
-  padding: 4rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centra el título y el contenido */
   gap: 40px;
 }
 
+.four_trips_title {
+  text-align: center;
+}
+
 .four_trips ul {
-  display: grid; /* mejor grid que flex si quieres un layout tipo cards */
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas si sobran espacios */
   gap: 20px;
   list-style: none;
-  padding: 0; /* elimina padding extra del ul */
+  padding: 0;
+  width: 100%;
+  max-width: 1200px; /* Evita que se estiren demasiado en pantallas gigantes */
 }
 
 .four_trips li {
@@ -24,6 +32,11 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  /* Esto asegura que todas midan lo mismo */
+  width: 280px;
 }
 
 .four_trips li:hover {
@@ -33,13 +46,18 @@
 
 .four_trips li img {
   width: 100%;
-  height: 300px;
+  height: 250px; /* Altura fija para consistencia visual */
+  object-fit: cover;
   display: block;
 }
 
 .info {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
 }
+
 .four_trips li figcaption {
   font-size: 1.2em;
   font-weight: bold;
@@ -54,6 +72,24 @@
 }
 
 .buy-option {
-  padding-bottom: 25px;
+  margin-top: auto;
+  padding-top: 15px;
 }
 
+/* Responsivo */
+@media (max-width: 1024px) {
+  .four_trips li {
+    width: calc(45% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .four_trips {
+    padding: 2rem 1rem;
+  }
+
+  .four_trips li {
+    width: 100%;
+    max-width: 350px;
+  }
+}

@@ -18,7 +18,7 @@ footer > article > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   flex-wrap: wrap;
   list-style-type: none;
 }
@@ -28,13 +28,4 @@ footer > article > ul > li > a {
 footer > article > ul > li > a:hover {
   color: var(--accent);
   cursor: pointer;
-}
-
-/* Móvil */
-@media (max-width: 599px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
 }

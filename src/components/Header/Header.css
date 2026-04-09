@@ -63,21 +63,23 @@ nav > i:hover {
   color: var(--accent);
   font-size: 15px;
 }
+
 /* Móvil */
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   header {
-    display: flex;
     flex-direction: column;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: auto;
-    padding: 12px;
+    padding: 1rem;
+    gap: 20px;
   }
-  header > nav > ul {
+  nav:first-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+  nav > ul {
+    gap: 15px;
   }
 }
